@@ -85,3 +85,15 @@ def limpo(peso,altura):
     else:
         return False
 
+def imprimir(result):
+    '''
+        Imprimi a saída(resultado do IMC) para o usuário, feito para trabalhar com o GUI.
+
+        Args:
+            result(float): Resultado do IMC.
+
+        Return:
+            Frase com o IMC, junto com a informação sobre o seu condicionamento físico.
+    '''
+    return 'Seu IMC é: {:.2f}'.format(result)+"\n Você está: "+tipologia(result)
+
