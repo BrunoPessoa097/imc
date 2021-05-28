@@ -65,3 +65,23 @@ def entrada(txt):
     '''
     return float(input(txt))
 
+def limpo(peso,altura):
+    '''
+        Verifica se recebeu alguma informação valida por parte do usuário.
+
+        Args:
+            peso(float): peso do usuário.
+            altura(float): altura do usuário.
+
+        Return:
+            Verifica se as entradas(Args) dos usuários são válidas.
+    '''
+
+    if peso > 2.0:
+        if altura > 0.45:
+            return True
+        else:
+            return False
+    else:
+        return False
+
