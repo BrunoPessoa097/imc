@@ -97,3 +97,46 @@ def imprimir(result):
     '''
     return 'Seu IMC é: {:.2f}'.format(result)+"\n Você está: "+tipologia(result)
 
+def main(peso=0,altura=0):
+    '''
+        Função principal que executa o necessário.
+
+        Args:
+            peso(float): peso informado pelo usuário.
+            altura(float): altura informado pelo usuário.
+
+        Return:
+            Modo shell: o calculo do IMC como se o usuário deseja repetir a ação.
+            Modo GUI: retorna o valor do IMC, junto com uma frase.
+    '''
+
+    # Modo desenvolvedor.
+    if shell:
+        global retornar
+        
+        altura = entrada("Informe sua altura: ")
+        peso   = entrada("informe seu peso: ")
+
+        if limpo(peso,altura):
+
+            resultado = imc(peso,altura)
+
+            print(tipologia(resultado))
+            print("IMC: {:.2f}".format(resultado))
+        
+            retornar = run()
+        else:
+            main()
+    # Modo GUI.
+    else:
+        retornar = False
+        
+        peso = float(peso)
+        altura = float(altura)
+
+        if peso or altura:
+            calculo = imc(peso,altura)
+            return imprimir(calculo)
+        else:
+            print("Habilite o Shell na linha 4")
+        
