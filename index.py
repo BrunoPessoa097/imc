@@ -38,3 +38,18 @@ def tipologia(resultado):
     else:
         return "Obesidade grave - Obesidade tipo 3"
 
+def run():
+    '''
+        Caso a individuo queira repetir o calculo, essa função só funciona no modo shell,
+        e no terminal.
+
+        Return:
+            true ou false se a usuário deseja fazer ou refazer o calculo.
+    '''
+    escolha = input("Deseja continuar? y/n \n")
+
+    if escolha == 'y':
+        return True
+    else:
+        return False
+
