@@ -105,6 +105,14 @@ class Application:
         self.mensagem = Label(self.quintoContainer, text="", font=self.fontPadrao)
         self.mensagem.pack()
         
+    def clear(self):
+        '''
+            limpa as entradas e a saida do programa.
+        '''
+        self.peso.delete(0,END)
+        self.altura.delete(0,END)
+        self.mensagem["text"] = ""
+
 
 
 # Executa o tinker, no qual e responsável pela parte gráfica. 
