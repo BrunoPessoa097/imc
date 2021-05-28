@@ -140,3 +140,7 @@ def main(peso=0,altura=0):
         else:
             print("Habilite o Shell na linha 4")
         
+# Define a função principal.
+if __name__ == '__main__':
+    while(retornar):
+        main()
