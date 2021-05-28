@@ -113,6 +113,25 @@ class Application:
         self.altura.delete(0,END)
         self.mensagem["text"] = ""
 
+    def mostra(self):
+        '''
+            realiza as operação de calculo, chamando as função para que o programa funciona.
+
+            Args:
+                self(class): Cria o GUI.
+        '''
+
+        # Captura as entradas do usuário.
+        peso = self.peso.get()
+        altura = self.altura.get()
+
+        # Verifica se as entradas não estão vazias.
+        if peso != "" and altura != "":
+            self.mensagem["text"] = main(peso,altura);
+        elif peso == "" or altura == "":
+            self.mensagem["text"] = "Existe campo(s) vazio(s)"
+        elif peso == ' ' or altura == ' ':
+            self.mensagem["text"] = "erro";
 
 
 # Executa o tinker, no qual e responsável pela parte gráfica. 
