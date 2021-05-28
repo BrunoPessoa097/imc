@@ -1,3 +1,7 @@
+'''
+    Version: 1.0.0
+'''
+
 # Repete a execução do programa.
 retornar = True
 # Seleciona se o modo desenvolvedor esta ligado.
