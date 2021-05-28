@@ -53,3 +53,15 @@ def run():
     else:
         return False
 
+def entrada(txt):
+    '''
+        Função generica para criar inputs do tipo float junto com o texto.
+
+        Args:
+            txt(str): o texto a ser colocado no input.
+
+        Return:
+            Input completo com texto e do tipo float.
+    '''
+    return float(input(txt))
+
