@@ -25,25 +25,25 @@ class Application:
         # Exibe em tela.
         self.primeiroContainer.pack() 
 
-        # Cria um container(mesmo padrão do 1 container, ver linha 19 e 20 caso dúvida).
+        # Cria um container(mesmo padrão do 1 container, ver linha 23 e 25 caso dúvida).
         self.segundoContainer = Frame(master)
         self.segundoContainer["padx"] = 20
         self.segundoContainer["pady"] = 5
         self.segundoContainer.pack()
 
-        # Cria um container(mesmo padrão do 1 container, ver linha 19 e 20 caso dúvida).
+        # Cria um container(mesmo padrão do 1 container, ver linha 23 e 25 caso dúvida).
         self.terceiroContainer = Frame(master)
         self.terceiroContainer["padx"] = 20
         self.terceiroContainer["pady"] = 5
         self.terceiroContainer.pack()
 
-        # Cria um container(mesmo padrão do 1 container, ver linha 19 e 20 caso dúvida).
+        # Cria um container(mesmo padrão do 1 container, ver linha 23 e 25 caso dúvida).
         self.quartoContainer = Frame(master)
         self.quartoContainer["padx"] = 20
         self.quartoContainer["pady"] = 10
         self.quartoContainer.pack()
 
-        # Cria um container(mesmo padrão do 1 container, ver linha 19 e 20 caso dúvida).
+        # Cria um container(mesmo padrão do 1 container, ver linha 23 e 25 caso dúvida).
         self.quintoContainer = Frame(master)
         self.quintoContainer["padx"] = 20
         self.quintoContainer.pack()
