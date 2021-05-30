@@ -146,6 +146,25 @@ def apenasNumeros(txt):
     
     return duasDecimal(txt)
 
+def duasDecimal(txt):
+    '''
+        Decimal com 2(duas casas).
+
+        Attributes:
+            ponto(char): Caractere ponto.
+        
+        Return:
+            Decimal com 2(duas) casas.
+    '''
+    ponto ='.'
+
+    sucesso =  txt.find(ponto)
+
+    if sucesso == -1:
+        return txt
+    else:
+        return txt[0:sucesso+3]
+
 def main(peso=0,altura=0):
     '''
         Função principal que executa o necessário.
