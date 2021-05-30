@@ -122,6 +122,30 @@ def habilitar():
     else:
         shell = False
 
+def apenasNumeros(txt):
+    '''
+        Remover dos dados informados tudo o que é números com exceção da virgula no qual converte para ponto.
+
+        Attributes:
+            alfabeto(sting): regExg do alfabeto.
+            virgula(char): virgula.
+            nada(string): caractere vazio.
+            ponto(char): caractere de um ponto.
+
+        Return:
+            Um número decimal com 2(duas) casas decimais.
+    '''
+    alfabeto = '[A-Z a-z]'
+    virgula= ','
+    nada = ''
+    ponto ='.'
+
+
+    txt = re.sub(virgula,ponto,txt)
+    txt = re.sub(alfabeto,nada,txt)
+    
+    return duasDecimal(txt)
+
 def main(peso=0,altura=0):
     '''
         Função principal que executa o necessário.
