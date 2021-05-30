@@ -186,6 +186,11 @@ def main(peso=0,altura=0):
         
         altura = entrada("Informe sua altura: ")
         peso   = entrada("informe seu peso: ")
+        altura = input("Informe sua altura: ")
+        peso   = input("informe seu peso: ")
+        
+        altura = float(apenasNumeros(altura))
+        peso = float(apenasNumeros(peso))
 
         if limpo(peso,altura):
 
