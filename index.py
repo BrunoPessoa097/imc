@@ -184,8 +184,6 @@ def main(peso=0,altura=0):
 
         global retornar
         
-        altura = entrada("Informe sua altura: ")
-        peso   = entrada("informe seu peso: ")
         altura = input("Informe sua altura: ")
         peso   = input("informe seu peso: ")
         
@@ -214,10 +212,8 @@ def main(peso=0,altura=0):
             calculo = imc(peso,altura)
             return imprimir(calculo)
         else:
-            print("Habilite o Shell na linha 4")
             saida = input("Deseja habilitar o terminal? y/n ").lower()[0];
 
-            habilitar() if saida == 'y' else os.system('python style.py')
             if saida == 'y':
                 habilitar()  
             elif saida == 'n': 
