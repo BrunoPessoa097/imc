@@ -60,18 +60,6 @@ def run():
         os.system('cls' if os.name == 'nt' else 'clear')
         return False
 
-def entrada(txt):
-    '''
-        Função generica para criar inputs do tipo float junto com o texto.
-
-        Args:
-            txt(str): o texto a ser colocado no input.
-
-        Return:
-            Input completo com texto e do tipo float.
-    '''
-    return float(input(txt))
-
 def limpo(peso,altura):
     '''
         Verifica se recebeu alguma informação valida por parte do usuário.
