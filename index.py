@@ -193,8 +193,8 @@ def main(peso=0,altura=0):
         os.system('cls' if os.name == 'nt' else 'clear')
         retornar = False
         
-        peso = float(peso)
-        altura = float(altura)
+        peso = float(apenasNumeros(peso))
+        altura = float(apenasNumeros(altura))
 
         if peso or altura:
             calculo = imc(peso,altura)
