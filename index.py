@@ -119,6 +119,8 @@ def habilitar():
         shell = True
         main()
     else:
+        shell = False
+
 def main(peso=0,altura=0):
     '''
         Função principal que executa o necessário.
@@ -164,6 +166,9 @@ def main(peso=0,altura=0):
             return imprimir(calculo)
         else:
             print("Habilite o Shell na linha 4")
+            saida = input("Deseja habilitar o terminal? y/n ");
+
+            habilitar() if saida == 'y' else os.system('python style.py')
         
 # Define a função principal.
 if __name__ == '__main__':
