@@ -3,7 +3,7 @@
 '''
 
 from tkinter import *
-from index import main;
+from index import main, apenasNumeros;
 
 class Application:
     '''
@@ -128,6 +128,9 @@ class Application:
         # Captura as entradas do usuário.
         peso = self.peso.get()
         altura = self.altura.get()
+
+        peso = apenasNumeros(peso)
+        altura =apenasNumeros(altura)
 
         # Verifica se as entradas não estão vazias.
         if peso != "" and altura != "":
