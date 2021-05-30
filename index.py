@@ -99,7 +99,7 @@ def imprimir(result):
         Return:
             Frase com o IMC, junto com a informação sobre o seu condicionamento físico.
     '''
-    return 'Seu IMC é: {:.2f}'.format(result)+"\n Você está: "+tipologia(result)
+    return 'Seu IMC é: {:.2f}'.format(result)+" Você está: "+tipologia(result)
 
 def main(peso=0,altura=0):
     '''
