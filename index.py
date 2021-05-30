@@ -1,6 +1,7 @@
 '''
     Version: 1.0.0
 '''
+import os
 
 # Repete a execução do programa.
 retornar = True
@@ -55,6 +56,7 @@ def run():
     if escolha == 'y':
         return True
     else:
+        os.system('cls' if os.name == 'nt' else 'clear')
         return False
 
 def entrada(txt):
@@ -116,6 +118,8 @@ def main(peso=0,altura=0):
 
     # Modo desenvolvedor.
     if shell:
+        os.system('cls' if os.name == 'nt' else 'clear')
+
         global retornar
         
         altura = entrada("Informe sua altura: ")
@@ -133,6 +137,7 @@ def main(peso=0,altura=0):
             main()
     # Modo GUI.
     else:
+        os.system('cls' if os.name == 'nt' else 'clear')
         retornar = False
         
         peso = float(peso)
