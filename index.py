@@ -103,6 +103,22 @@ def imprimir(result):
     '''
     return 'Seu IMC é: {:.2f}'.format(result)+" Você está: "+tipologia(result)
 
+def habilitar():
+    '''
+        Habilita automaticamente o terminal ou a interface sem a necessidade de abrir outro arquivo.
+        
+        Args:
+            shell(boolean): Responsável por automatizar a execução do código no terimal, ou pelo GUI.
+        
+        Return:
+            Oposto do que foi entrado de maneira booleana.    
+    '''
+    global shell
+
+    if shell == False:
+        shell = True
+        main()
+    else:
 def main(peso=0,altura=0):
     '''
         Função principal que executa o necessário.
