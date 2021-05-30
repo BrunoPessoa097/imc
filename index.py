@@ -218,6 +218,13 @@ def main(peso=0,altura=0):
             saida = input("Deseja habilitar o terminal? y/n ").lower()[0];
 
             habilitar() if saida == 'y' else os.system('python style.py')
+            if saida == 'y':
+                habilitar()  
+            elif saida == 'n': 
+                os.system('python style.py')
+            else:
+                print('Informe uma entrada válida')
+                main()
 
         
 # Define a função principal.
