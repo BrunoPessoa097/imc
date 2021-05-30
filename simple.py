@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-from index import main
+from index import main, apenasNumeros
 
 # Tema
 sg.theme('DarkAmber')
@@ -10,7 +10,7 @@ layout = [
     [sg.Text('Peso:'),sg.InputText(key='peso')],
     [sg.Text('Altura'),sg.InputText(key='altura')],
     [sg.Button('Comfirmar'), sg.Cancel(),],
-    [sg.Text(key='-OUTPUT-',size=(40,1))]
+    [sg.Text(key='-OUTPUT-',size=(45,1))]
 ]
 # Criando a janela
 window = sg.Window('Calculadora IMC', layout)
@@ -25,6 +25,9 @@ while True:
     elif event == 'Comfirmar':
         peso = values['peso'];
         altura = values['altura'];
+
+        peso = apenasNumeros(peso)
+        altura = apenasNumeros(altura)
 
         window['-OUTPUT-'].update(main(peso,altura))
         
