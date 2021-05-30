@@ -51,7 +51,7 @@ def run():
         Return:
             true ou false se a usuário deseja fazer ou refazer o calculo.
     '''
-    escolha = input("Deseja continuar? y/n \n")
+    escolha = input("Deseja continuar? y/n \n").lower()
 
     if escolha == 'y':
         return True
@@ -166,9 +166,10 @@ def main(peso=0,altura=0):
             return imprimir(calculo)
         else:
             print("Habilite o Shell na linha 4")
-            saida = input("Deseja habilitar o terminal? y/n ");
+            saida = input("Deseja habilitar o terminal? y/n ").lower();
 
             habilitar() if saida == 'y' else os.system('python style.py')
+
         
 # Define a função principal.
 if __name__ == '__main__':
