@@ -2,6 +2,7 @@
     Version: 1.0.0
 '''
 import os
+import re
 
 # Repete a execução do programa.
 retornar = True
