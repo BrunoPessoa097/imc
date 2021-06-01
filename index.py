@@ -202,7 +202,7 @@ def main(peso=0,altura=0):
             if saida == 'y':
                 habilitar()  
             elif saida == 'n': 
-                os.system('python style.py')
+                os.system('python .\simple.py')
             else:
                 print('Informe uma entrada válida')
                 main()
