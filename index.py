@@ -202,7 +202,15 @@ def main(peso=0,altura=0):
             if saida == 'y':
                 habilitar()  
             elif saida == 'n': 
-                os.system('python .\simple.py')
+                gui = input('Qual GUI deseja usar? digite (t) para tkinter ou (s) simpleply: ').lower()[0]
+
+                if gui == 't':
+                    os.system('python .\style.py')
+                elif gui == 's':
+                    os.system('python .\simple.py')
+                else:
+                    print('informe um valor válido')
+                
             else:
                 print('Informe uma entrada válida')
                 main()
