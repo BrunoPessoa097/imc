@@ -26,10 +26,13 @@ while True:
         peso = values['peso'];
         altura = values['altura'];
 
-        peso = float(apenasNumeros(peso))
-        altura = float(apenasNumeros(altura))
+        if peso and altura:
+            peso = float(apenasNumeros(peso))
+            altura = float(apenasNumeros(altura))
 
-        window['-OUTPUT-'].update(main(peso,altura))
+            window['-OUTPUT-'].update(main(peso,altura))
+        else:
+            window['-OUTPUT-'].update('Existem campo(s) vazio(s)')
     
     elif event == 'Limpar':
         window['peso'].Update('')
