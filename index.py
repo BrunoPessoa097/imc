@@ -190,13 +190,10 @@ def main(peso=0,altura=0):
             main()
     # Modo GUI.
     else:
-        os.system('cls' if os.name == 'nt' else 'clear')
+        os.system('cls')
         retornar = False
         
-        peso = float(apenasNumeros(peso))
-        altura = float(apenasNumeros(altura))
-
-        if peso or altura:
+        if peso and altura:
             calculo = imc(peso,altura)
             return imprimir(calculo)
         else:
