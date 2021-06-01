@@ -26,10 +26,9 @@ while True:
         peso = values['peso'];
         altura = values['altura'];
 
-        peso = apenasNumeros(peso)
-        altura = apenasNumeros(altura)
+        peso = float(apenasNumeros(peso))
+        altura = float(apenasNumeros(altura))
 
         window['-OUTPUT-'].update(main(peso,altura))
-        
 
 window.close()
