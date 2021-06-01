@@ -13,7 +13,7 @@ layout = [
     [sg.Text(key='-OUTPUT-',size=(45,1))]
 ]
 # Criando a janela
-window = sg.Window('Calculadora IMC', layout)
+window = sg.Window('Calculadora IMC         versão 1.0.0', layout)
 
 while True:
     # Ler os eventos e valores.
