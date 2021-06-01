@@ -9,7 +9,7 @@ layout = [
     [sg.Text("Calculadora IMC")],
     [sg.Text('Peso:'),sg.InputText(key='peso')],
     [sg.Text('Altura'),sg.InputText(key='altura')],
-    [sg.Button('Comfirmar'), sg.Cancel(),],
+    [sg.Button('Comfirmar'),sg.Button('Limpar'), sg.Cancel(),],
     [sg.Text(key='-OUTPUT-',size=(45,1))]
 ]
 # Criando a janela
@@ -30,5 +30,10 @@ while True:
         altura = float(apenasNumeros(altura))
 
         window['-OUTPUT-'].update(main(peso,altura))
+    
+    elif event == 'Limpar':
+        window['peso'].Update('')
+        window['altura'].Update('')
+        window['-OUTPUT-'].update('')
 
 window.close()
