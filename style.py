@@ -129,8 +129,8 @@ class Application:
         peso = self.peso.get()
         altura = self.altura.get()
 
-        peso = apenasNumeros(peso)
-        altura =apenasNumeros(altura)
+        peso = float(apenasNumeros(peso))
+        altura = float(apenasNumeros(altura))
 
         # Verifica se as entradas não estão vazias.
         if peso != "" and altura != "":
